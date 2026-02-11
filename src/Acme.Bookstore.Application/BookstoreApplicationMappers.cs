@@ -30,3 +30,11 @@ public partial class CreateUpdateBookDtoToBookMapper : MapperBase<CreateUpdateBo
 
     public override partial void Map(CreateUpdateBookDto source, Book destination);
 }
+
+[Mapper]
+public partial class BookDtoToCreateUpdateBookDtoMapper : MapperBase<BookDto, CreateUpdateBookDto>
+{
+    public override partial CreateUpdateBookDto Map(BookDto source);
+
+    public override partial void Map(BookDto source, CreateUpdateBookDto destination);
+}

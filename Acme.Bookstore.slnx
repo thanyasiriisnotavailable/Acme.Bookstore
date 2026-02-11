@@ -1,7 +1,4 @@
 <Solution>
-    <Configurations>
-        <Platform Name="Any CPU" />
-    </Configurations>
     <Folder Name="/src/">
         <Project Path="src/Acme.Bookstore.Domain/Acme.Bookstore.Domain.csproj" />
         <Project Path="src/Acme.Bookstore.Application/Acme.Bookstore.Application.csproj" />

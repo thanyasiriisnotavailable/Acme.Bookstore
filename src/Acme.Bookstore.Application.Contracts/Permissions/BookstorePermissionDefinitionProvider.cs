@@ -9,7 +9,7 @@ public class BookstorePermissionDefinitionProvider : PermissionDefinitionProvide
 {
     public override void Define(IPermissionDefinitionContext context)
     {
-        var bookStoreGroup = context.AddGroup(BookstorePermissions.GroupName, L("Permission:BookStore"));
+        var bookStoreGroup = context.AddGroup(BookstorePermissions.GroupName, L("Permission:Bookstore"));
 
         //Books permissions
         var booksPermission = bookStoreGroup.AddPermission(BookstorePermissions.Books.Default, L("Permission:Books"));

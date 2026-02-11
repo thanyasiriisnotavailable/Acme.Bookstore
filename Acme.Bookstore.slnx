@@ -1,0 +1,24 @@
+<Solution>
+    <Configurations>
+        <Platform Name="Any CPU" />
+    </Configurations>
+    <Folder Name="/src/">
+        <Project Path="src/Acme.Bookstore.Domain/Acme.Bookstore.Domain.csproj" />
+        <Project Path="src/Acme.Bookstore.Application/Acme.Bookstore.Application.csproj" />
+        <Project Path="src/Acme.Bookstore.EntityFrameworkCore/Acme.Bookstore.EntityFrameworkCore.csproj" />
+        <Project Path="src/Acme.Bookstore.Web/Acme.Bookstore.Web.csproj" />
+        <Project Path="src/Acme.Bookstore.Domain.Shared/Acme.Bookstore.Domain.Shared.csproj" />
+        <Project Path="src/Acme.Bookstore.Application.Contracts/Acme.Bookstore.Application.Contracts.csproj" />
+        <Project Path="src/Acme.Bookstore.HttpApi/Acme.Bookstore.HttpApi.csproj" />
+        <Project Path="src/Acme.Bookstore.HttpApi.Client/Acme.Bookstore.HttpApi.Client.csproj" />
+        <Project Path="src/Acme.Bookstore.DbMigrator/Acme.Bookstore.DbMigrator.csproj" />
+    </Folder>
+    <Folder Name="/test/">
+        <Project Path="test/Acme.Bookstore.Application.Tests/Acme.Bookstore.Application.Tests.csproj" />
+        <Project Path="test/Acme.Bookstore.Web.Tests/Acme.Bookstore.Web.Tests.csproj" />
+        <Project Path="test/Acme.Bookstore.EntityFrameworkCore.Tests/Acme.Bookstore.EntityFrameworkCore.Tests.csproj" />
+        <Project Path="test/Acme.Bookstore.TestBase/Acme.Bookstore.TestBase.csproj" />
+        <Project Path="test/Acme.Bookstore.Domain.Tests/Acme.Bookstore.Domain.Tests.csproj" />
+        <Project Path="test/Acme.Bookstore.HttpApi.Client.ConsoleTestApp/Acme.Bookstore.HttpApi.Client.ConsoleTestApp.csproj" />
+    </Folder>
+</Solution>

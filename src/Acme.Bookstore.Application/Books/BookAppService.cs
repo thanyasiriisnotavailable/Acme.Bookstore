@@ -1,4 +1,5 @@
 ﻿using Acme.Bookstore.Books;
+using Acme.Bookstore.Permissions;
 using System;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
@@ -18,6 +19,10 @@ public class BookAppService :
     public BookAppService(IRepository<Book, Guid> repository)
         : base(repository)
     {
-
+        GetPolicyName = BookstorePermissions.Books.Default;
+        GetListPolicyName = BookstorePermissions.Books.Default;
+        CreatePolicyName = BookstorePermissions.Books.Create;
+        UpdatePolicyName = BookstorePermissions.Books.Edit;
+        DeletePolicyName = BookstorePermissions.Books.Delete;
     }
 }

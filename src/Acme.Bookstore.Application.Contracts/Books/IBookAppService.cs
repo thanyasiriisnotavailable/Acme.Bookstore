@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Acme.Bookstore.Books;
+using System;
+using System.Threading.Tasks;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 
@@ -11,5 +13,6 @@ public interface IBookAppService :
         PagedAndSortedResultRequestDto, //Used for paging/sorting
         CreateUpdateBookDto> //Used to create/update a book
 {
-
+    // ADD the NEW METHOD
+    Task<ListResultDto<AuthorLookupDto>> GetAuthorLookupAsync();
 }

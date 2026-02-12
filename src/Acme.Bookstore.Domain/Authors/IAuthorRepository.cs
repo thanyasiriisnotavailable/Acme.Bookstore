@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Volo.Abp.Domain.Repositories;
 
-namespace Acme.BookStore.Authors;
+namespace Acme.Bookstore.Authors;
 
 public interface IAuthorRepository : IRepository<Author, Guid>
 {

@@ -1,3 +1,4 @@
+using Acme.Bookstore.Authors;
 using Acme.Bookstore.Books;
 using Acme.BookStore.Books;
 using Riok.Mapperly.Abstractions;
@@ -37,4 +38,12 @@ public partial class BookDtoToCreateUpdateBookDtoMapper : MapperBase<BookDto, Cr
     public override partial CreateUpdateBookDto Map(BookDto source);
 
     public override partial void Map(BookDto source, CreateUpdateBookDto destination);
+}
+
+[Mapper]
+public partial class AuthorToAuthorDtoMapper : MapperBase<Author, AuthorDto>
+{
+    public override partial AuthorDto Map(Author source);
+
+    public override partial void Map(Author source, AuthorDto destination);
 }

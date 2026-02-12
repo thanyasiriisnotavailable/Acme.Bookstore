@@ -1,4 +1,5 @@
 using Acme.Bookstore.Authors;
+using Acme.BookStore.Books;
 using Riok.Mapperly.Abstractions;
 using Volo.Abp.Mapperly;
 using static Acme.Bookstore.Web.Pages.Authors.EditModalModel;
@@ -36,4 +37,28 @@ public partial class EditAuthorViewModelToUpdateAuthorDtoMapper : MapperBase<Pag
 {
     public override partial UpdateAuthorDto Map(Pages.Authors.EditModalModel.EditAuthorViewModel source);
     public override partial void Map(Pages.Authors.EditModalModel.EditAuthorViewModel source, UpdateAuthorDto destination);
+}
+
+[Mapper]
+public partial class CreateBookViewModelToCreateUpdateBookDtoMapper : MapperBase<Pages.Books.CreateModalModel.CreateBookViewModel, CreateUpdateBookDto>
+{
+    public override partial CreateUpdateBookDto Map(Pages.Books.CreateModalModel.CreateBookViewModel source);
+
+    public override partial void Map(Pages.Books.CreateModalModel.CreateBookViewModel source, CreateUpdateBookDto destination);
+}
+
+[Mapper]
+public partial class BookDtoToEditBookViewModelMapper : MapperBase<BookDto, Pages.Books.EditModalModel.EditBookViewModel>
+{
+    public override partial Pages.Books.EditModalModel.EditBookViewModel Map(BookDto source);
+
+    public override partial void Map(BookDto source, Pages.Books.EditModalModel.EditBookViewModel destination);
+}
+
+[Mapper]
+public partial class EditBookViewModelToCreateUpdateBookDtoMapper : MapperBase<Pages.Books.EditModalModel.EditBookViewModel, CreateUpdateBookDto>
+{
+    public override partial CreateUpdateBookDto Map(Pages.Books.EditModalModel.EditBookViewModel source);
+
+    public override partial void Map(Pages.Books.EditModalModel.EditBookViewModel source, CreateUpdateBookDto destination);
 }

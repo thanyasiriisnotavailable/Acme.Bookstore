@@ -60,7 +60,7 @@ public class BookstoreMenuContributor : IMenuContributor
         context.Menu.AddItem(
             new ApplicationMenuItem(
                 "BooksStore",
-                l["Menu:BookStore"],
+                l["Menu:Bookstore"],
                 icon: "fa fa-book"
             ).AddItem(
                 new ApplicationMenuItem(

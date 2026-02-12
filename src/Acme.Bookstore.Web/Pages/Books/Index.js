@@ -1,5 +1,5 @@
 ﻿$(function () {
-    var l = abp.localization.getResource('BookStore');
+    var l = abp.localization.getResource('Bookstore');
     var createModal = new abp.ModalManager(abp.appPath + 'Books/CreateModal');
     var editModal = new abp.ModalManager(abp.appPath + 'Books/EditModal');
 

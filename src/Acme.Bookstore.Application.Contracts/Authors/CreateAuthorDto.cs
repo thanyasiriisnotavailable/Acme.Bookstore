@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Acme.BookStore.Authors;
 
 namespace Acme.Bookstore.Authors;
 

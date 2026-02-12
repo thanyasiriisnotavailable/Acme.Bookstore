@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Volo.Abp.Domain.Repositories.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
 
-namespace Acme.BookStore.Authors;
+namespace Acme.Bookstore.Authors;
 
 public class EfCoreAuthorRepository
     : EfCoreRepository<BookstoreDbContext, Author, Guid>,

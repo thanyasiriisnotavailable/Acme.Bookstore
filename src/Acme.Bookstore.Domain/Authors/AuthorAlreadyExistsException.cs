@@ -1,7 +1,6 @@
-﻿using Acme.Bookstore;
-using Volo.Abp;
+﻿using Volo.Abp;
 
-namespace Acme.BookStore.Authors;
+namespace Acme.Bookstore.Authors;
 
 public class AuthorAlreadyExistsException : BusinessException
 {

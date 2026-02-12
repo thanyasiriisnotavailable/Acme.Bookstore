@@ -2,9 +2,8 @@
 using System.Threading.Tasks;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
-using Acme.Bookstore.Authors;
 
-namespace Acme.BookStore.Authors;
+namespace Acme.Bookstore.Authors;
 
 public interface IAuthorAppService : IApplicationService
 {

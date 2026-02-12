@@ -2,7 +2,7 @@
 using Volo.Abp;
 using Volo.Abp.Domain.Entities.Auditing;
 
-namespace Acme.BookStore.Authors;
+namespace Acme.Bookstore.Authors;
 
 public class Author : FullAuditedAggregateRoot<Guid>
 {

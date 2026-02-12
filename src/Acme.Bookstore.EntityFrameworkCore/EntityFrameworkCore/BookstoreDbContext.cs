@@ -1,5 +1,5 @@
 using Acme.Bookstore.Books;
-using Acme.BookStore.Authors;
+using Acme.Bookstore.Authors;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
